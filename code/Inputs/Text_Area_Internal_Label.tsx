@@ -3,13 +3,12 @@ import { Frame, addPropertyControls, ControlType } from "framer"
 
 import {
     Input_group,
-    Internal_Group,
     Internal_Label,
-    Internal_Input,
     Description_element,
+    Text_Area_Internal
 } from "./Input_style";
 
-export function Input_Internal_Label({label, placeholder, width, height, value, type, status, theme, description, setValue, getValue}) {
+export function Text_Area_Internal_Label({label, placeholder, width, height, value, status, rows, resize, theme, description, setValue, getValue}) {
     const [ inputValue, changeValue ] = React.useState(setValue ? setValue : value);
 
     React.useEffect(() => {
@@ -25,7 +24,16 @@ export function Input_Internal_Label({label, placeholder, width, height, value, 
         <Frame backgroundColor={"transparent"} width={width} height={height}>
             <Input_group>
                 <Internal_Label status={status}><span>{label}</span>
-                    <Internal_Input onChange={change} status={status} placeholder={placeholder} type={type} theme={theme} value={inputValue} disabled={status === 'disabled' && true }/>
+                    <Text_Area_Internal
+                        resizable={resize}
+                        onChange={change}
+                        status={status}
+                        placeholder={placeholder}
+                        theme={theme}
+                        value={inputValue}
+                        rows={rows}
+                        disabled={status === 'disabled' && true }>
+                    </Text_Area_Internal>
                 </Internal_Label>
                 <Description_element status={status}>
                     <span>{description}</span>
@@ -35,13 +43,12 @@ export function Input_Internal_Label({label, placeholder, width, height, value, 
     )
 }
 
-
-Input_Internal_Label.defaultProps = {
+Text_Area_Internal_Label.defaultProps = {
     width: 400,
-    height: 64,
+    height: 208,
 };
 
-addPropertyControls(Input_Internal_Label, {
+addPropertyControls(Text_Area_Internal_Label, {
     label: {
         title: "Label",
         type: ControlType.String,
@@ -69,47 +76,19 @@ addPropertyControls(Input_Internal_Label, {
         optionTitles: ["Default", "Disabled"],
         title: "Status"
     },
-    type: {
-        title: "Type",
-        type: ControlType.SegmentedEnum,
-        defaultValue: "text",
-        options: ["text", "password"],
-        optionTitles: ["Text", "Password"],
+    rows: {
+        type: ControlType.Number,
+        defaultValue: 7,
+        min: 1,
+        max: 12,
+        step: 1,
+        displayStepper: true,
     },
-    // size: {
-    //     title: "Size",
-    //     type: ControlType.SegmentedEnum,
-    //     defaultValue: "text",
-    //     options: ["sm", "md"],
-    //     optionTitles: ["Small", "Medium"],
-    // },
-    // theme: {
-    //     title: "Theme",
-    //     type: ControlType.SegmentedEnum,
-    //     defaultValue: "day",
-    //     options: ["day", "night"],
-    //     optionTitles: ["Day", "Night"],
-    // },
-    // icon: {
-    //     title: "Icon",
-    //     type: ControlType.String,
-    //     defaultValue: "Warning",
-    // },
-
-    // limitMode: {
-    //     type: ControlType.Boolean,
-    //     title: "Limit mode",
-    //     defaultValue: false,
-    // },
-    // limit: {
-    //     type: ControlType.Number,
-    //     title: "Max symbols",
-    //     defaultValue: 80,
-    //     min: 0,
-    //     max: 100,
-    //     step: 1,
-    //     hidden(props) {
-    //         return props.limitMode === false;
-    //     }
-    // },
+    resize: {
+        type: ControlType.Boolean,
+        title: "Resizable",
+        defaultValue: true,
+        enabledTitle: "On",
+        disabledTitle: "Off",
+    },
 });
