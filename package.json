@@ -9,10 +9,13 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "7f52a400-7f9a-48de-a556-a4857e26f1a9"
+		"id": "7f52a400-7f9a-48de-a556-a4857e26f1a9",
+		"displayName": "DDS Components"
 	},
 	"author": "Rodion Pozniakov",
 	"dependencies": {
 		"styled-components": "^5.1.0"
-	}
+	},
+	"name": "@framer/trinetix.dds-components",
+	"version": "1.1.0"
 }
