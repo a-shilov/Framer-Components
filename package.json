@@ -1,0 +1,18 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "7f52a400-7f9a-48de-a556-a4857e26f1a9"
+	},
+	"author": "Rodion Pozniakov",
+	"dependencies": {
+		"styled-components": "^5.1.0"
+	}
+}
