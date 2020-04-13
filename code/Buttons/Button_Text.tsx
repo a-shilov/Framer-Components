@@ -14,8 +14,8 @@ export function Button_Text({width, height, text, type, size, padding, disabled,
 }
 
 Button_Text.defaultProps = {
-    width: 56,
-    height: 24,
+    width: 75,
+    height: 34,
 };
 
 addPropertyControls(Button_Text, {

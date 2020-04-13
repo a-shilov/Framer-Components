@@ -86,12 +86,12 @@ export default {
                     borderColor: colors.Accessible_Green,
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Accessible_Green,
                     borderColor: colors.Accessible_Green
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Accessible_Green,
                     borderColor: colors.Accessible_Green
                 }
@@ -103,12 +103,12 @@ export default {
                     borderColor: colors.Black,
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Black,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Black,
                     borderColor: "none"
                 }
@@ -120,12 +120,12 @@ export default {
                     borderColor: colors.Accessible_Blue
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Accessible_Blue,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Accessible_Blue,
                     borderColor: "none"
                 }
@@ -137,20 +137,20 @@ export default {
                     borderColor: colors.Red
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Red,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Red,
                     borderColor: "none"
                 }
             },
             disabled: {
                 backgroundColor: "transparent",
-                color: "#BBBCBC",
-                borderColor: "#BBBCBC"
+                color: colors.Cool_Grey_2,
+                borderColor: colors.Cool_Grey_2,
             }
         },
         outline: {
@@ -161,12 +161,12 @@ export default {
                     borderColor: "transparent",
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Accessible_Green,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Accessible_Green,
                     borderColor: "none"
                 }
@@ -178,12 +178,12 @@ export default {
                     borderColor: "transparent",
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Black,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Black,
                     borderColor: "none"
                 }
@@ -195,12 +195,12 @@ export default {
                     borderColor: "transparent",
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Accessible_Blue,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Accessible_Blue,
                     borderColor: "none"
                 }
@@ -212,19 +212,19 @@ export default {
                     borderColor: "transparent",
                 },
                 hover: {
-                    backgroundColor: "#F5F5F5",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
                     color: colors.Red,
                     borderColor: "none"
                 },
                 active: {
-                    backgroundColor: "#EDEDED",
+                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
                     color: colors.Red,
                     borderColor: "none"
                 }
             },
             disabled: {
                 backgroundColor: "transparent",
-                color: "#BBBCBC",
+                color: colors.Cool_Grey_2,
                 borderColor: "transparent"
             }
         }
