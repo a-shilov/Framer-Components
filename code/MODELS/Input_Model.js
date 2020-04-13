@@ -1,4 +1,4 @@
-import  atom  from "../TOKENS/atom";
+import atom from "../TOKENS/atom";
 import colors from "../TOKENS/colors.js"
 
 export default {
@@ -6,61 +6,61 @@ export default {
         label: {
           external: {
               default: {
-                  color: colors.secondary.Cool_Grey_10,
+                  color: colors.Cool_Grey_10,
                   hover: {
-                      color: colors.secondary.Cool_Grey_10
+                      color: colors.Cool_Grey_10
                   }
               },
               disabled: {
-                  color: colors.secondary.Cool_Grey_2,
+                  color: colors.Cool_Grey_2,
                   hover: {
-                      color: colors.secondary.Cool_Grey_2,
+                      color: colors.Cool_Grey_2,
                   }
               },
           },
           internal: {
               default: {
-                  color: colors.secondary.Cool_Grey_10,
+                  color: colors.Cool_Grey_10,
                   hover: {
-                      color: colors.secondary.Cool_Grey_10
+                      color: colors.Cool_Grey_10
                   }
               },
               disabled: {
-                  color: colors.secondary.Cool_Grey_6,
+                  color: colors.Cool_Grey_6,
                   hover: {
-                      color: colors.secondary.Cool_Grey_6
+                      color: colors.Cool_Grey_6
                   }
               },
           }
         },
         input: {
             default: {
-                placeholderColor: colors.secondary.Cool_Grey_7,
-                color: colors.primary.Black,
-                borderColor: colors.secondary.Cool_Grey_6,
-                backgroundColor: colors.primary.White,
-                сaretColor: colors.primary.Deloitte_Green,
+                placeholderColor: colors.Cool_Grey_7,
+                color: colors.Black,
+                borderColor: colors.Cool_Grey_6,
+                backgroundColor: colors.White,
+                сaretColor: colors.Deloitte_Green,
                 focus: {
-                    borderColor: colors.primary.Deloitte_Green,
+                    borderColor: colors.Deloitte_Green,
                 }
             },
             disabled: {
-                placeholderColor: colors.secondary.Cool_Grey_7,
-                color: colors.primary.Black,
-                borderColor: colors.secondary.Cool_Grey_2,
-                backgroundColor: colors.secondary.Cool_Grey_2,
-                сaretColor: colors.primary.Black,
+                placeholderColor: colors.Cool_Grey_7,
+                color: colors.Black,
+                borderColor: colors.Cool_Grey_2,
+                backgroundColor: colors.Cool_Grey_2,
+                сaretColor: colors.Black,
                 focus: {
-                    borderColor: colors.secondary.Cool_Grey_2,
+                    borderColor: colors.Cool_Grey_2,
                 }
             }
         },
         description: {
             default: {
-                color: colors.secondary.Cool_Grey_10
+                color: colors.Cool_Grey_10
             },
             disabled: {
-                color: colors.secondary.Cool_Grey_2
+                color: colors.Cool_Grey_2
             }
         },
     },

@@ -14,8 +14,10 @@
 	},
 	"author": "Rodion Pozniakov",
 	"dependencies": {
+		"color": "^3.1.2",
+		"colors": "^1.4.0",
 		"styled-components": "^5.1.0"
 	},
 	"name": "@framer/trinetix.dds-components",
-	"version": "1.1.0"
+	"version": "1.2.0"
 }
