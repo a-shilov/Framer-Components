@@ -232,19 +232,19 @@ export default {
     offset: {
         s: {
             paddingTop: 0.75 * atom.size,
-            paddingBottom: 1.25 * atom.size,
+            paddingBottom: 0.75 * atom.size,
             paddingLeft: 2 * atom.size,
             paddingRight: 2 * atom.size
         },
         m: {
             paddingTop: 1.25 * atom.size,
-            paddingBottom: 1.75 * atom.size,
+            paddingBottom: 1.35 * atom.size,
             paddingLeft: 3 * atom.size,
             paddingRight: 3 * atom.size,
         },
         l: {
             paddingTop: 2.25 * atom.size,
-            paddingBottom: 2.75 * atom.size,
+            paddingBottom: 2.25 * atom.size,
             paddingLeft: 4 * atom.size,
             paddingRight: 4 * atom.size
         }
@@ -272,6 +272,18 @@ export default {
             fontSize: 3.5 * atom.size,
             lineHeight: 5 *  atom.size,
             fontWeight: 400
+        }
+    },
+    icon: {
+        m: {
+            width: 3 * atom.size,
+            height: 3 * atom.size,
+            marginLeft: 3 * atom.size
+        },
+        l: {
+            width: 3 * atom.size,
+            height: 3 * atom.size,
+            marginLeft: 3.8 * atom.size
         }
     }
 }

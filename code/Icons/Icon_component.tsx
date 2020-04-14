@@ -11,17 +11,19 @@ export function Icon_component({icon, color, type, width, height}) {
             {type && type === 'alone' && (
                 <Frame width={width} height={height} backgroundColor={"transparent"}>
                     {icons[icon] && (
-                        <Icon_wrapper color={ color } dangerouslySetInnerHTML={{ __html: icons[icon] }}></Icon_wrapper>
+                        <Icon_wrapper color={color}>
+                            <div color={ color } dangerouslySetInnerHTML={{ __html: icons[icon] }}></div>
+                        </Icon_wrapper>
                     )}
                 </Frame>
             )}
 
             {type && type === 'nested' && (
-                <div>
+                <>
                     {icons[icon] && (
                         <Icon_wrapper color={ color } dangerouslySetInnerHTML={{ __html: icons[icon] }}></Icon_wrapper>
                     )}
-                </div>
+                </>
             )}
         </>
     )
