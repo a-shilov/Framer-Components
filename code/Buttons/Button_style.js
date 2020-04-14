@@ -17,35 +17,33 @@ export const Button_el = styled.button`
     `}
    
    ${({color, type}) => color && type && `
-        background-color: ${Button_model.style[type][color].default.backgroundColor};
-        color: ${Button_model.style[type][color].default.color};
-        border-color: ${Button_model.style[type][color].default.borderColor};
+        background-color: ${Button_model.style[color][type].default.backgroundColor};
+        color: ${Button_model.style[color][type].default.color};
+        border-color: ${Button_model.style[color][type].default.borderColor};
         svg {
-           fill: ${Button_model.style[type][color].default.color};
+           fill: ${Button_model.style[color][type].default.color};
         }
        
         &:hover {
-            background-color: ${Button_model.style[type][color].hover.backgroundColor};
-            color: ${Button_model.style[type][color].hover.color};
+            background-color: ${Button_model.style[color][type].hover.backgroundColor};
+            color: ${Button_model.style[color][type].hover.color};
         } 
        
        &:active {
-            background-color: ${Button_model.style[type][color].active.backgroundColor};
-            color: ${Button_model.style[type][color].color}; 
+            background-color: ${Button_model.style[color][type].active.backgroundColor};
+            color: ${Button_model.style[color][type].color}; 
        }
        
        &:disabled {
-            background-color: ${Button_model.style[type].disabled.backgroundColor};
-            color: ${Button_model.style[type].disabled.color};
-            border-color: ${Button_model.style[type].disabled.borderColor};
+            background-color: ${Button_model.style[color][type].disabled.backgroundColor};
+            color: ${Button_model.style[color][type].disabled.color};
+            border-color: ${Button_model.style[color][type].disabled.borderColor};
             svg {
-                fill: ${Button_model.style[type].disabled.color};
+                fill: ${Button_model.style[color][type].disabled.color};
             }
         }
    `}
 `;
-
-
 
 
 export const Button_with_icon = styled(Button_el)`

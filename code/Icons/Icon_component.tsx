@@ -50,6 +50,6 @@ addPropertyControls(Icon_component, {
     icon: {
         title: "Icon",
         type: ControlType.String,
-        defaultValue: "Icon_Backup_Complete"
+        defaultValue: "AlignCenter"
     }
 });

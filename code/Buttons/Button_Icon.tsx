@@ -32,14 +32,7 @@ addPropertyControls(Button_Icon, {
     icon: {
         title: "Icon",
         type: ControlType.String,
-        defaultValue: "Briefcase"
-    },
-    type: {
-        type: ControlType.Enum,
-        defaultValue: "primary",
-        options: ["primary", "secondary", "outline"],
-        optionTitles: ["Primary", "Secondary", "Outline"],
-        title: "Type"
+        defaultValue: "Remove"
     },
     color: {
         type: ControlType.Enum,
@@ -47,6 +40,13 @@ addPropertyControls(Button_Icon, {
         options: ["green", "black", "blue", "red"],
         optionTitles: ["Green", "Black", "Blue", "Red"],
         title: "Color"
+    },
+    type: {
+        type: ControlType.Enum,
+        defaultValue: "primary",
+        options: ["primary", "secondary", "thirdLevel", "fourLevel", "silent"],
+        optionTitles: ["Primary", "Secondary", "Third Level", "Four Level", "Silent"],
+        title: "Type"
     },
     size: {
         title: "Size",
