@@ -3,231 +3,454 @@ import colors from "../TOKENS/colors.js"
 
 export default {
     style: {
-        primary: {
-            green: {
-                default: {
-                    backgroundColor: colors.Accessible_Green,
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                hover: {
-                    backgroundColor: colors.methods.Blacken(colors.Accessible_Green, 0.05),
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                active: {
-                    backgroundColor: colors.methods.Blacken(colors.Accessible_Green, 0.08),
-                    color: colors.White,
-                    borderColor: "transparent"
-                }
-            },
-            black: {
-                default: {
-                    backgroundColor: colors.Black,
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                hover: {
-                    backgroundColor: colors.methods.Blacken(colors.Black, 0.05),
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                active: {
-                    backgroundColor: colors.methods.Blacken(colors.Black, 0.08),
-                    color: colors.White,
-                    borderColor: "transparent"
-                }
-            },
-            blue: {
-                default: {
-                    backgroundColor: colors.Accessible_Blue,
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                hover: {
-                    backgroundColor: colors.methods.Blacken(colors.Accessible_Blue, 0.05),
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                active: {
-                    backgroundColor: colors.methods.Blacken(colors.Accessible_Blue, 0.08),
-                    color: colors.White,
-                    borderColor: "transparent"
-                }
-            },
-            red: {
-                default: {
-                    backgroundColor: colors.Red,
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                hover: {
-                    backgroundColor: colors.methods.Blacken(colors.Red, 0.05),
-                    color: colors.White,
-                    borderColor: "transparent"
-                },
-                active: {
-                    backgroundColor: colors.methods.Blacken(colors.Red, 0.08),
-                    color: colors.White,
-                    borderColor: "transparent"
-                }
-            },
-            disabled: {
-                backgroundColor: colors.Cool_Grey_2,
-                color: colors.White,
-                borderColor: colors.Cool_Grey_2,
-            }
-        },
-        secondary: {
-            green: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Accessible_Green,
-                    borderColor: colors.Accessible_Green,
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Accessible_Green,
-                    borderColor: colors.Accessible_Green
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Accessible_Green,
-                    borderColor: colors.Accessible_Green
-                }
-            },
-            black: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Black,
-                    borderColor: colors.Black,
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Black,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Black,
-                    borderColor: "none"
-                }
-            },
-            blue: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Accessible_Blue,
-                    borderColor: colors.Accessible_Blue
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Accessible_Blue,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Accessible_Blue,
-                    borderColor: "none"
-                }
-            },
-            red: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Red,
-                    borderColor: colors.Red
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Red,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Red,
-                    borderColor: "none"
-                }
-            },
-            disabled: {
-                backgroundColor: "transparent",
-                color: colors.Cool_Grey_2,
-                borderColor: colors.Cool_Grey_2,
-            }
-        },
-        outline: {
-            green: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Accessible_Green,
-                    borderColor: "transparent",
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Accessible_Green,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Accessible_Green,
-                    borderColor: "none"
-                }
-            },
-            black: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Black,
-                    borderColor: "transparent",
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Black,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Black,
-                    borderColor: "none"
-                }
-            },
-            blue: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Accessible_Blue,
-                    borderColor: "transparent",
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Accessible_Blue,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Accessible_Blue,
-                    borderColor: "none"
-                }
-            },
-            red: {
-                default: {
-                    backgroundColor: "transparent",
-                    color: colors.Red,
-                    borderColor: "transparent",
-                },
-                hover: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.8),
-                    color: colors.Red,
-                    borderColor: "none"
-                },
-                active: {
-                    backgroundColor: colors.methods.Whiten(colors.Cool_Grey_2, 0.6),
-                    color: colors.Red,
-                    borderColor: "none"
-                }
-            },
-            disabled: {
-                backgroundColor: "transparent",
-                color: colors.Cool_Grey_2,
-                borderColor: "transparent"
-            }
-        }
+       green: {
+           primary: {
+               default: {
+                   backgroundColor: colors.Accessible_Green,
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#20740B",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#1B6209",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           secondary: {
+               default: {
+                   backgroundColor: "#53565A",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#494C50",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#424448",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           thirdLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Accessible_Green,
+                   borderColor: colors.Accessible_Green,
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Accessible_Green,
+                   borderColor: colors.Accessible_Green
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Accessible_Green,
+                   borderColor: colors.Accessible_Green
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "#BBBCBC",
+               }
+           },
+           fourLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: "#53565A",
+                   borderColor: "#53565A",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: colors.Cool_Grey_2,
+                   borderColor: colors.Cool_Grey_2,
+               }
+           },
+           silent: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Accessible_Green,
+                   borderColor: "transparent",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Accessible_Green,
+                   borderColor: "none"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Accessible_Green,
+                   borderColor: "none"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "transparent"
+               }
+           }
+       },
+       black: {
+           primary: {
+               default: {
+                   backgroundColor: colors.Black,
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#262626",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#333333",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           secondary: {
+               default: {
+                   backgroundColor: "#53565A",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#494C50",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#424448",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           thirdLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Black,
+                   borderColor: colors.Black,
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Black,
+                   borderColor: colors.Black
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Black,
+                   borderColor: colors.Black
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "#BBBCBC",
+               }
+           },
+           fourLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: "#53565A",
+                   borderColor: "#53565A",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "#BBBCBC",
+               }
+           },
+           silent: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Black,
+                   borderColor: "transparent",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Black,
+                   borderColor: "none"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Black,
+                   borderColor: "none"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "transparent"
+               }
+           }
+       },
+       blue: {
+           primary: {
+               default: {
+                   backgroundColor: colors.Accessible_Blue,
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#006F9E",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#00618A",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           secondary: {
+               default: {
+                   backgroundColor: "#53565A",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#494C50",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#424448",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           thirdLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Accessible_Blue,
+                   borderColor: colors.Accessible_Blue,
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Accessible_Blue,
+                   borderColor: colors.Accessible_Blue
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Accessible_Blue,
+                   borderColor: colors.Accessible_Blue
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: colors.Cool_Grey_2,
+                   borderColor: colors.Cool_Grey_2,
+               }
+           },
+           fourLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: "#53565A",
+                   borderColor: "#53565A",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: colors.Cool_Grey_2,
+                   borderColor: colors.Cool_Grey_2,
+               }
+           },
+           silent: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Accessible_Blue,
+                   borderColor: "transparent",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Accessible_Blue,
+                   borderColor: "none"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Accessible_Blue,
+                   borderColor: "none"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: colors.Cool_Grey_2,
+                   borderColor: "transparent"
+               }
+           }
+       },
+       red: {
+           primary: {
+               default: {
+                   backgroundColor: colors.Red,
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#C7251A",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#B52217",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           secondary: {
+               default: {
+                   backgroundColor: "#53565A",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               hover: {
+                   backgroundColor: "#494C50",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               active: {
+                   backgroundColor: "#424448",
+                   color: colors.White,
+                   borderColor: "transparent"
+               },
+               disabled: {
+                   backgroundColor: "#BBBCBC",
+                   color: colors.White,
+                   borderColor: "#BBBCBC",
+               }
+           },
+           thirdLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Red,
+                   borderColor: colors.Red,
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Red,
+                   borderColor: colors.Red
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Red,
+                   borderColor: colors.Red
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "#BBBCBC",
+               }
+           },
+           fourLevel: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: "#53565A",
+                   borderColor: "#53565A",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: "#53565A",
+                   borderColor: "#53565A"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "#BBBCBC",
+               }
+           },
+           silent: {
+               default: {
+                   backgroundColor: "transparent",
+                   color: colors.Red,
+                   borderColor: "transparent",
+               },
+               hover: {
+                   backgroundColor: "#F5F5F5",
+                   color: colors.Red,
+                   borderColor: "none"
+               },
+               active: {
+                   backgroundColor: "#EBEBEB",
+                   color: colors.Red,
+                   borderColor: "none"
+               },
+               disabled: {
+                   backgroundColor: "transparent",
+                   color: "#BBBCBC",
+                   borderColor: "transparent"
+               }
+           }
+       },
     },
     offset: {
         s: {
@@ -275,15 +498,20 @@ export default {
         }
     },
     icon: {
+        s: {
+            width: 3 * atom.size,
+            height: 3 * atom.size,
+            marginLeft: 2.5* atom.size
+        },
         m: {
             width: 3 * atom.size,
             height: 3 * atom.size,
-            marginLeft: 3 * atom.size
+            marginLeft: 2 * atom.size
         },
         l: {
             width: 3 * atom.size,
             height: 3 * atom.size,
-            marginLeft: 3.8 * atom.size
+            marginLeft: 3.2 * atom.size
         }
     }
 }

@@ -1,28 +1,38 @@
 import * as React from "react"
 import { Frame, addPropertyControls, ControlType } from "framer"
 
-import { Button_el, Text_el } from "./Button_style";
+import { Button_with_icon, Text_el, Icon_container} from "./Button_style";
 
-export function Button_Text({width, height, text, type, size, padding, disabled, color }) {
+import { Icon_component } from "../Icons/Icon_component";
+
+export function Button_Dropdown({width, height, text, type, size, padding, disabled, color, icon}) {
     return (
         <Frame backgroundColor={"transparent"} width={width} height={height}>
-            <Button_el disabled={disabled} type={type} color={color} padding={padding} size={size}>
+            <Button_with_icon disabled={disabled} type={type} color={color} padding={padding} size={size}>
                 <Text_el size={size}>{text}</Text_el>
-            </Button_el>
+                <Icon_container size={size}>
+                    <Icon_component icon={icon} type={"nested"} color={""}></Icon_component>
+                </Icon_container>
+            </Button_with_icon>
         </Frame>
     )
 }
 
-Button_Text.defaultProps = {
+Button_Dropdown.defaultProps = {
     width: 75,
     height: 34,
 };
 
-addPropertyControls(Button_Text, {
+addPropertyControls(Button_Dropdown, {
     text: {
         title: "Text",
         type: ControlType.String,
         defaultValue: "Sample"
+    },
+    icon: {
+        title: "Icon",
+        type: ControlType.String,
+        defaultValue: "ButtonDropdown"
     },
     color: {
         type: ControlType.Enum,
