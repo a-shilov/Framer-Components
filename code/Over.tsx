@@ -3,7 +3,7 @@ import { Override, useCycle, Data } from "framer"
 
 const frameState = Data({
     name: "Rad Pozniakov",
-})
+});
 
 export function userName(props): Override {
     return {
@@ -17,5 +17,13 @@ export function changeUserName(props): Override {
         getValue(value) {
             frameState.name = value
         },
-    }
+    };
 }
+
+    export function clickButton(props): Override {
+        return {
+            trigger() {
+                console.log('Trigggers');
+            }
+        }
+    }

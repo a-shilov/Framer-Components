@@ -48,6 +48,7 @@ export const Button_el = styled.button`
 
 export const Button_with_icon = styled(Button_el)`
     display: flex;
+    justify-content: space-between;
     align-items: center;
 `;
 

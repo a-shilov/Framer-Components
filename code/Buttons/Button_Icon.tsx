@@ -5,10 +5,15 @@ import { Button_with_icon, Text_el, Icon_container} from "./Button_style";
 
 import { Icon_component } from "../Icons/Icon_component";
 
-export function Button_Icon({width, height, text, type, size, padding, disabled, color, icon}) {
+export function Button_Icon({width, height, text, type, size, padding, disabled, color, icon, trigger}) {
+
+    function buttonClicked(){
+        trigger && trigger()
+    }
+
     return (
         <Frame backgroundColor={"transparent"} width={width} height={height}>
-            <Button_with_icon disabled={disabled} type={type} color={color} padding={padding} size={size}>
+            <Button_with_icon onClick={() => buttonClicked()} disabled={disabled} type={type} color={color} padding={padding} size={size}>
                 <Text_el size={size}>{text}</Text_el>
                 <Icon_container size={size}>
                     <Icon_component icon={icon} type={"nested"} color={""}></Icon_component>
