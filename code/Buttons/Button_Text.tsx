@@ -3,10 +3,15 @@ import { Frame, addPropertyControls, ControlType } from "framer"
 
 import { Button_el, Text_el } from "./Button_style";
 
-export function Button_Text({width, height, text, type, size, padding, disabled, color }) {
+export function Button_Text({width, height, text, type, size, padding, disabled, color, trigger}) {
+
+    function buttonClicked(){
+        trigger && trigger()
+    }
+
     return (
         <Frame backgroundColor={"transparent"} width={width} height={height}>
-            <Button_el disabled={disabled} type={type} color={color} padding={padding} size={size}>
+            <Button_el onClick={() => buttonClicked()} disabled={disabled} type={type} color={color} padding={padding} size={size}>
                 <Text_el size={size}>{text}</Text_el>
             </Button_el>
         </Frame>
