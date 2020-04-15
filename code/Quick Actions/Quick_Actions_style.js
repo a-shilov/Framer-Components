@@ -62,8 +62,8 @@ export const Action = styled.button`
   }
 `;
 
-export const Icon = styled.p` 
-  width: ${9.5 * atom.size}px; 
+export const Icon = styled.p`
+  width: ${9.5 * atom.size}px;
   height: ${9.5 * atom.size}px;
   padding: ${Quick_Actions_Model.icon.padding}px ${Quick_Actions_Model.icon.padding}px;
 `;
