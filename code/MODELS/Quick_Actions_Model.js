@@ -77,7 +77,10 @@ export default {
         paddingRight: 3.3* atom.size,
     },
     icon: {
-        padding: 2.4 * atom.size,
+        paddingTop: 2 * atom.size,
+        paddingRight: 2.4 * atom.size,
+        paddingBottom: 2.6 * atom.size,
+        paddingLeft: 2.4 * atom.size,
     },
     text: {
         fontFamily: "Open Sans",

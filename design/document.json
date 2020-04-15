@@ -6189,7 +6189,7 @@
                 {
                   "enabled" : true,
                   "type" : "string",
-                  "value" : "Paste"
+                  "value" : "Pasts"
                 }
               ],
               "type" : "primary"

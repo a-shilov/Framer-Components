@@ -65,7 +65,10 @@ export const Action = styled.button`
 export const Icon = styled.p`
   width: ${9.5 * atom.size}px;
   height: ${9.5 * atom.size}px;
-  padding: ${Quick_Actions_Model.icon.padding}px ${Quick_Actions_Model.icon.padding}px;
+  padding-top: ${Quick_Actions_Model.icon.paddingTop}px;
+  padding-right: ${Quick_Actions_Model.icon.paddingRight}px;
+  padding-left: ${Quick_Actions_Model.icon.paddingLeft}px;
+  padding-bottom: ${Quick_Actions_Model.icon.paddingBottom}px;
 `;
 
 export const Text = styled.p`
