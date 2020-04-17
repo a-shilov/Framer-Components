@@ -3,7 +3,7 @@ import { Frame, addPropertyControls, ControlType } from "framer"
 
 import { Switch_Element, Control, Baseline, Rectangle, Label } from "./Switch_style";
 
-export function Switch({width, height, label, checked, disabled, value}) {
+export function Switch({width, height, label, checked, disabled, value, color}) {
 
     const [toogleStatus, changeToogleStatus] = React.useState(checked);
 
@@ -18,8 +18,8 @@ export function Switch({width, height, label, checked, disabled, value}) {
     return (
         <Frame onTap={handleToggle} width={width} height={height} background={"transparent"}>
             <Switch_Element>
-                <Control label={label}>
-                    <Rectangle disabled={disabled} checked={toogleStatus}></Rectangle>
+                <Control label={label} color={color} checked={toogleStatus} disabled={disabled}>
+                    <Rectangle checked={toogleStatus}></Rectangle>
                     <Baseline></Baseline>
                 </Control>
                 <Label disabled={disabled}>{label}</Label>
@@ -39,7 +39,13 @@ addPropertyControls(Switch, {
         type: ControlType.String,
         defaultValue: "Option",
     },
-
+    color: {
+        type: ControlType.Enum,
+        defaultValue: "green",
+        options: ["green", "black", "blue"],
+        optionTitles: ["Green", "Black", "Blue"],
+        title: "Color"
+    },
     checked: {
         type: ControlType.SegmentedEnum,
         defaultValue: "inactive",
